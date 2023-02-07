@@ -1,0 +1,15 @@
+<app-divider>Modal Component</app-divider>
+<button (click)="toggleVisibility()">Show Modal</button>
+<app-modal (event)="toggleVisibility()" *ngIf="visible">
+  <div title class="header">Flexible Title</div>
+  <div description class="content">
+    <p>This is the flexible description</p>
+  </div>
+
+  <button button (click)="toggleVisibility()" class="ui button">
+    Flexible
+  </button>
+</app-modal>
+
+<app-divider>Accordion Component</app-divider>
+<app-accordion [accordionArray]="accordion"></app-accordion>

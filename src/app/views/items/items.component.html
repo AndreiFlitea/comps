@@ -1,0 +1,19 @@
+<app-divider>Item List</app-divider>
+
+<div class="ui items" *ngFor="let item of items">
+  <div class="item">
+    <div class="image">
+      <img src="../views-home/assets/tree.jpg" />
+    </div>
+    <div class="content">
+      <a class="header">{{ item.header }}</a>
+      <div class="meta">
+        <span>{{ item.description }}</span>
+      </div>
+      <div class="description">
+        <p></p>
+      </div>
+      <div class="extra">{{ item.more }}</div>
+    </div>
+  </div>
+</div>
